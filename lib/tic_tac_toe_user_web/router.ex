@@ -5,7 +5,8 @@ defmodule TicTacToeUserWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", TicTacToeUserWeb do
+  scope "/", TicTacToeUserWeb do
     pipe_through :api
+    post "/authenticate", AuthenticationController, :authenticate 
   end
 end
