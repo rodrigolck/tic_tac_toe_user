@@ -35,7 +35,10 @@ defmodule TicTacToeUser.Mixfile do
       {:phoenix, "~> 1.3.4"},
       {:phoenix_pubsub, "~> 1.0"},
       {:gettext, "~> 0.11"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:mongodb_ecto, github: "michalmuskala/mongodb_ecto", branch: "ecto-2"},
+      {:comeonin, "~> 4.0"},
+      {:bcrypt_elixir, "~> 1.0"}
     ]
   end
 end
