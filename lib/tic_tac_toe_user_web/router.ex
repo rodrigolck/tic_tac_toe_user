@@ -7,6 +7,7 @@ defmodule TicTacToeUserWeb.Router do
 
   scope "/", TicTacToeUserWeb do
     pipe_through :api
-    post "/authenticate", AuthenticationController, :authenticate 
+    post "/authenticate", AuthenticationController, :authenticate
+    resources "/users", UserController, only: [:show]
   end
 end
